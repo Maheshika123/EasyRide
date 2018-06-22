@@ -1,0 +1,474 @@
+/*====================================================
+                DEFAULT VALUES:
+
+                Font Family                 : Roboto Condensed
+                
+                Greenish Blue               : #34c6d3       (Buttons, Icons, Links, Lines & Backgrounds)
+                Steel Gray                  : #41464b       (Headings)
+                Blue Bayoux                 : #64707b       (Paragraphs)
+                White                       : #fff          (Text With Black Backgrounds)
+                Black                       : #000 
+
+======================================================*/
+
+/* General CSS */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+h3 {
+    color: #41464b ;
+    text-transform: uppercase;
+}
+
+p{
+    color: #64707b;
+    font-size: 16px;
+    font-weight:300;
+}
+h4{
+    font-weight: 500;
+}
+/*====================================================
+                        Social Icons
+======================================================*/
+.social-list {
+    padding-left: 0;
+}
+.social-list li{
+    display: inline-block;
+    list-style-type: none;
+    
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    margin-top: 10px;
+}
+.social-icon i{
+    font-size: 24px;
+}
+.icon-grey i{
+    color: #64707b;
+}
+.icon-white i{
+    color: #fff;
+
+}
+.social-icon:hover{
+    color: #e67e22;
+}
+    
+
+
+/*====================================================
+                        PARALLAX (Generic)
+======================================================*/
+
+.bg-parallax {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+
+}
+/*====================================================
+                Navigation
+======================================================*/
+
+/*
+.navbar{
+    padding: 10px 0;
+}
+.easy-top-nav{
+    background: rgba(0,0,0,0.5);
+    padding: 7px 0;
+}
+.easy-nav-wrapper{
+    padding: 0 85px;
+}
+.navbar-nav{
+    display: inline-block;
+    float: right;
+}
+.navbar-nav li a{
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.navbar-nav li a:hover,
+.navbar-nav li a:focus{
+    background: none;
+    color: #e67e22;
+}
+*/
+.navbar{
+    padding: 20px 0;
+}
+.easy-top-nav{
+    background: rgba(0, 0, 0, 0.5);
+    padding: 7px 0;
+}
+.easy-nav-wrapper{
+    padding: 0 85px;
+}
+.navbar-nav{
+    float: right;
+/*    margin-left: 650px;*/
+}
+
+.navbar-nav li a{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;     
+}
+.navbar-nav li{
+    margin-right: 15px;
+}
+.nav-link:hover,
+.nav-link:focus{
+    background: none;
+    color: #ed750b ;
+}
+.navbar-toggler{
+    background-color: rgba(0,0,0,0.1);
+    border:1px solid #fff;
+    border-radius: 0;
+}
+.navbar-toggle-icon .icon-bar{
+    background-color: #fff;
+}
+.navbar-collapse{
+    max-height: none !important;
+}
+
+
+
+
+
+/*====================================================
+                        HOME
+======================================================*/
+
+#home {
+    height: 100%;
+}
+
+#home-cover {
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66)), url('../img/bg_2.jpg');
+
+}
+
+#home-content-box {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+    /*    text-align: center;*/
+}
+
+#home-heading h3 {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 700;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+/*====================================================
+                        BUTTONS (Generic)
+======================================================*/
+
+.btn-general {
+    border-color: #fff;
+    border-width: 2px;
+    border-radius: 0;
+    padding: 12px 26px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.btn-white {
+    border-color: #fff;
+    color: #fff;
+
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    background-color: #fff;
+    color: #41464b;
+}
+.btn-blue {
+    border-radius: 40px;
+    text-align: center;
+    padding: 8px 25px;
+    border-color: #e67e22;
+    color: #e67e22;
+}
+
+.btn-blue:hover,
+.btn-blue:focus {
+    background-color: #e67e22;
+    color: #fff;
+
+}
+
+/*====================================================
+                        Animations
+======================================================*/
+
+#home-heading,
+#home-cover,
+#home-btn {
+    animation-duration: .5s;
+}
+
+#home-heading {
+
+    animation-delay: .1s;
+
+}
+
+#home-cover {
+    animation-delay: .1s;
+
+}
+
+#home-btn {
+    animation-delay: .1s;
+
+}
+/*====================================================
+                        content box
+======================================================*/
+.content-box{
+    padding: 60px 0;
+}
+.content-title h3{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.content-title-underline{
+    width: 50px;
+    height: 3px;
+    background-color: #e67e22;
+    margin: 0 auto 0 auto;
+    margin-bottom: 30px;
+}
+/*====================================================
+                Services
+======================================================*/
+.service-item{
+    padding: 20px 0 20px 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+    padding-right: 30px;
+}
+.service-item-icon ion-icon{
+    color: #e67e22;
+/*    float: left;*/
+    margin-right: 25px;
+    width: 75px;
+    height: 75px;
+    font-size: 70px;
+    margin-bottom: 30px;
+    padding:0 0 50px 0;
+}
+.service-item:hover .service-item-icon ion-icon{
+    text-align: center;
+    color: #000;
+    border-radius: 10px;
+}
+.service-item-title h3{
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+}
+.service-item-desc p{
+    margin: 0;
+}
+/*====================================================
+                About
+======================================================*/
+#about-bg-image{
+    width: 60%;
+    height: 700px;
+    float: right;
+    background-image: url(../img/bg-head.jpg);
+    border-left: 200px solid #fff;
+    border-top: 700px solid transparent;
+}
+
+#about-content-box{
+    float: left;
+    height: 700px;
+    width: 350px;
+    
+    
+}
+#about-content-box-outer{
+    width: 100%;
+    height: 100%;
+    display: table;
+    height: 700px;
+}
+#about-content-box-inner{
+    display: table-cell;
+    vertical-align: middle;
+}
+#about .content-title-underline{
+    margin: 0;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.about-desc p{
+    margin: 30px;
+}
+#about .content-title h3{
+    text-align: left;
+}
+/*====================================================
+               Register
+======================================================*/
+
+#register .content-box{
+    height: 500px;
+    width: 30%;
+}
+#register .register-title-underline{
+    width: 50px;
+    height: 3px;
+    background-color: #8d8a8b;
+    margin: 0  0 0;
+    margin-bottom: 30px;
+}
+/*====================================================
+               How it is work
+======================================================*/
+#how-works .content-title{
+    padding-top: 50px;
+}
+#how-works {
+    margin-bottom: 100px;
+}
+
+.step-box{
+    margin-top: 30px;
+}
+.step-box:first-child{
+    text-align: right;
+    padding-right: 3%;
+}
+.step-box:last-child {
+    text-align: left;
+    padding-left: 3%;
+    margin-top: 70px;
+}
+#how-works .app-screen img{
+    width: 80%;
+    text-align: center;
+    padding-right: 60px;
+}
+.works-step{
+    margin-bottom: 50px;
+}
+.works-step .number {
+    color: #e67e22;
+    font-size: 30px;
+    height: 54px;
+    width: 54px;
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    float: left;
+    margin-right: 25px;
+}
+
+.btn-droid:link,
+.btn-droid:visited{
+    border: 0;
+}
+.btn-apple:link,
+.btn-apple:visited{
+    border: 0;
+}
+ .btn-droid img{
+    height: 50px;
+    width: 190px;
+    text-align: center;
+}
+/*====================================================
+               Contact
+======================================================*/
+footer{
+    background-color: #41464b;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-top:5px solid rgba(0,0,0,0.1);
+}
+#contact-left h3,
+#contact-right h3{
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+}
+#contact-left p{
+    color: #fff;
+    margin-bottom: 30px; 
+}
+#contact-info{
+    background-image: url(../img/world-map.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+address{
+    color: #fff;
+}
+address strong,
+#phone-email strong{
+    letter-spacing: 1px;
+}
+.form-control{
+    margin-bottom: 20px;
+    background: transparent;
+    border-radius: 0;
+    border-color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 8px 16px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

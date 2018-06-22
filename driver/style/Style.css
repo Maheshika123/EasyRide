@@ -1,0 +1,44 @@
+
+
+
+button {
+	border-radius: 10px;
+}
+
+
+.button1:hover {
+	background-color: #837F7E;
+	color: white;
+    
+
+
+
+}
+
+.button2:hover {
+	background-color: #837F7E;
+	color: white;
+
+
+
+}
+
+.button3:hover {
+	background-color: #837F7E;
+	color: white;
+
+
+
+}
+
+
+.button1:active{
+	transform: translateY(4px);
+}
+.button2:active{
+	transform: translateY(4px);
+}
+.button3:active{
+	transform: translateY(4px);
+}
+
